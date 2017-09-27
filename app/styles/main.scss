@@ -1,0 +1,58 @@
+// bower:scss
+// endbower
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body, html {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+#head{
+  background-color: #fff;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  .top-head{
+    background: #111;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    #full-name{
+      position: absolute;
+      font-size: 3vw;
+      top: 10%;
+      left: 5%;
+    }
+  }
+  .bottom-head{
+    .overlayHead{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.68);
+      opacity: 0;
+    }
+    .bgHead {
+      position: absolute;
+      width: 101%;
+      height: 100%;
+      background: url(../images/headBg.jpg) bottom center no-repeat;
+      background-size: 100%;
+      pointer-events: none;
+    }
+    position: absolute;
+    width: 105%;
+    height: 60%;
+    top: 40%;
+  }
+}
