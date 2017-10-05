@@ -28,7 +28,7 @@ var globals = {
  }
 
 function addEvents() {
-  paralax(event);
+  // paralax(event);
   dom.bottomHead.addEventListener('mouseover', ()=> {
     console.log('Body clicked');
   });
